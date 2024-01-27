@@ -1,0 +1,31 @@
+<!--Write a JavaScript code to accept the birth year from the use and calculate and print
+ his age.Also print whether the user can vote or not .Make sure if the age turns out to be 0
+or negative your code prompts the user to input his birth year again until the age comes
+ positive -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var birthYear;
+      var age;
+      do {
+        alert("plese input your BIRTH YEAR correct...");
+        birthYear = Number(prompt("Enter your BIRTH YEAR"));
+      } while (birthYear <= 0 || isNaN(birthYear));
+      age = 2023 - birthYear;
+      if (age >= 18) {
+        document.write(
+          `Your age is :${age}<br>and You are eligible for vote...<br>`
+        );
+      } else {
+        document.write(
+          `Your age is :${age}<br>and You are NOT eligible for vote...<br>`
+        );
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

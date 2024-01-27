@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change logo on click</title>
+    <script>
+      function changeLogo() {
+        let img = document.querySelector("img");
+        if (img.getAttribute("src", "../about-me.jpg") === "../about-me.jpg") {
+          img.setAttribute("src", "../mypic.jpg");
+        } else {
+          img.setAttribute("src", "../about-me.jpg");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h3>My pic</h3>
+    <img src="../about-me.jpg" alt="" width="100px" /> <br />
+    <input
+      type="button"
+      name="button"
+      value="Change Logo"
+      onclick="changeLogo()"
+    />
+  </body>
+</html>

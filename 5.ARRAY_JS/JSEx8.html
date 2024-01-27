@@ -1,0 +1,49 @@
+<!--Write a javaScropt code to create a tip calculator for a restaurant. The rules for tip are
+a. if the bill amount is less thean 250, tip is 20%
+b. if the bill amount is between 250 and 500 then tip is 15% and
+c. when the bill is above 500 then tip is 10%.
+your code should accept four bill anounts from the user,calculate  thir tis and print the
+orignal bill as well as final bill for each amount -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      document.write(`<table border='5' width="40%">`);
+      document.write(`<caption><h2><u>Your bill  datails</u></h2></caption>`);
+      document.write(
+        `<tr><th>Bill Amount</th> <th> Final Amount</th></tr><br>`
+      );
+      for (let i = 0; i < 4; i++) {
+        let amount = Number(prompt("Enter amount"));
+        if (isNaN(amount) == true) {
+          document.write(
+            `You did not enter a number type so plese next time enter a number.<br>`
+          );
+        } else {
+          if (amount < 250) {
+            document.write(
+              `<tr><td>${amount} </td><th>  ${(amount =
+                amount + amount * (20 / 100))}</th></tr><br>`
+            );
+          } else if (amount >= 250 && amount <= 500) {
+            document.write(
+              `<tr><td>${amount} </td><th> ${(amount =
+                amount + amount * (15 / 100))}</th></tr><br>`
+            );
+          } else if (amount > 500) {
+            document.write(
+              `<tr><td>${amount}</td> <th> ${(amount =
+                amount + amount * (10 / 100))}</th></tr><br>`
+            );
+          }
+        }
+      }
+      document.write(`</table>`);
+    </script>
+  </head>
+  <body></body>
+</html>

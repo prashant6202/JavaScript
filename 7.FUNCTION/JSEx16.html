@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setInterval and clearInterval</title>
+    <script>
+        
+      function showDateTime() {
+      let d = new Date();
+          console.log(d);
+      }
+      function StartTimer() {
+        console.log("Timer about to start in 1 second");
+        id= setInterval(showDateTime, 1000);
+      }
+      function StopTimer() {
+        clearInterval(id);
+        console.log("Timer stopped")
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <input type="button" value="StartTimer" onclick="StartTimer()" /><br />
+      <input type="button" value="StopTimer" onclick="StopTimer()" /><br />
+    </div>
+  </body>
+</html>

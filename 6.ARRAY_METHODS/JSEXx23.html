@@ -1,0 +1,32 @@
+<!--Write a JavaScript code to accept 5 numbers from the user in an array. Now ask the user
+to enter another number and REMOVE all its occurencess from the array-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let arr = [];
+      document.write(`<h2><u>Before data removing from array is </u></h2>`);
+      for (let i = 0; i < 5; i++) {
+        arr.push(Number(prompt("Enter a Number")));
+      }
+      for (let x of arr) {
+        document.write(`<b>${x}</b><br>`);
+      }
+      let removeNumber = Number(prompt("Enter number for removing"));
+      document.write(
+        `Removing data from the array is <b>${removeNumber}</b></br>`
+      );
+      document.write(`<h3>After data is removing from the array is </h3>`);
+      for (let x of arr) {
+        if (x != removeNumber) {
+          document.write(`${x}<br>`);
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

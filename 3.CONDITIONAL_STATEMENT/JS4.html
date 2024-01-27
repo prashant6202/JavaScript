@@ -1,0 +1,54 @@
+<!--Suppose at a University there are 5 subjects and passing marks for each subject is 60.
+to be promoted to the next class a student must alleat pas 4 subjects. AAlso his average marks
+should not be less than 60. Write an app to promt the user for inputting marks in 5 subjects
+and print his averae marks, mumber of subjects he has passed and finally whether he is
+promoted to the next class......using if else-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let n1 = Number(prompt("Enter the first subject number"));
+      let n2 = Number(prompt("Enter the second subject number"));
+      let n3 = Number(prompt("Enter the third subject number"));
+      let n4 = Number(prompt("Enter the forth subject number"));
+      let n5 = Number(prompt("Enter the fifth subject number"));
+      document.write(`your Marks<br>`);
+      document.write(`${n1}<br>`);
+      document.write(`${n2}<br>`);
+      document.write(`${n3}<br>`);
+      document.write(`${n4}<br>`);
+      document.write(`${n5}<br>`);
+      let avg = (n1 + n2 + n3 + n4 + n5) / 5;
+      let pass = 0;
+      if (n1 >= 60) {
+        pass++;
+      }
+      if (n2 >= 60) {
+        pass++;
+      }
+      if (n3 >= 60) {
+        pass++;
+      }
+      if (n4 >= 60) {
+        pass++;
+      }
+      if (n5 >= 60) {
+        pass++;
+      }
+      if (pass >= 4 && avg >= 60) {
+        document.write(
+          `you  passed in ${pass} subjects <br>your average marks: ${avg}<br>you are promote to the next class`
+        );
+      } else {
+        document.write(
+          `you  passed in ${pass} subjects <br>your average marks: ${avg}<br>you fail..<br>you are not promote to the next class`
+        );
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

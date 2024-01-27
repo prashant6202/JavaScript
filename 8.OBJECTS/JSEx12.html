@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overrite toSting()</title>
+    <script>
+      let myCar = { company: "Maruti", model: "Baleno", year: "2014" };
+      myCar.toString = function () {
+        return `${myCar.company},${myCar.model},${myCar.year}`;
+      };
+      document.write(myCar);
+    </script>
+  </head>
+  <body></body>
+</html>

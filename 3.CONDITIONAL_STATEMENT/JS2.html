@@ -1,0 +1,31 @@
+<!--Write a JavaScript code to accept an integer from the user and check whether it is
+ NEGATIVE NUMBER or a double digit positive number or a number with 3 or more digits. make
+ sure that if the user inputs a non numeric value, your code displays the message "You did
+ not input a numeric value" -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let a = prompt("Enter a number");
+      if (isNaN) {
+        if (a < 0) {
+          document.write(a + "<b> is NEGATIVE number......</b> ");
+        } else if (a >= 0 && a <= 9) {
+          document.write(a + "<b> is Single digit positive number.....</b>");
+        } else if (a > 0 && a <= 99) {
+          document.write(a + "<b> is Double digit positive number.....</b>");
+        } else if (a >= 100) {
+          document.write(
+            a + "<b> is three or more digit positive number.....</b>"
+          );
+        }
+      } else {
+        document.write("<b>You did not input a numeric value.....!</b>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

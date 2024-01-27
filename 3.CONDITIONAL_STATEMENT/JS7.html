@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>seaon</title>
+    <script>
+      let a = Number(prompt("Enter MONTH number"));
+      if (isNaN(a) == true) {
+        document.write("You did not input a number...");
+      } else {
+        switch (a) {
+          case 11:
+          case 12:
+          case 1:
+          case 2:
+            document.write("******WINTER*******");
+            break;
+          case 3:
+          case 4:
+          case 5:
+          case 6:
+            document.write("******SUMMER*******");
+            break;
+          case 7:
+          case 8:
+          case 9:
+          case 10:
+            document.write("******RAINY*******");
+            break;
+          default:
+            document.write("Wrong Month Number...!");
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

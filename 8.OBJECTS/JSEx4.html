@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adding properties ysing [] operator</title>
+    <script>
+        let myCar1=new Object();
+        myCar1["company"]="TOYTA"
+        myCar1["model"]="Fortuner";
+        myCar1["year"]=2028;
+        myCar1["reg no"]="BR32A0001";   // in this method space allowed in property
+
+        let myCar2=new Object();
+        myCar2["company"]="TESLA";
+        myCar2["model"]="Tesla";
+        myCar2["year"]=2029; 
+        myCar2["reg no"]="BR32A0001";
+        console.log("Company :"+myCar1.company);
+        console.log("Model: "+myCar1.model);
+        console.log("Year: "+myCar1.year);
+        console.log("Reg no: "+myCar1["reg no"]);
+        
+        console.log("Company: "+myCar2.company);
+        console.log("Model: "+myCar2.model);
+        console.log("Year: "+myCar2.year);
+        console.log("Reg no: "+myCar2["reg no"]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--Write a program in JavaScript to accept an integer from the user and calculate and 
+    print th sum of even and sum of odd numbers up to the given no  separately.. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let n = Number(prompt("Enter a number"));
+      let soe, sod;
+      soe = sod = 0;
+      let i;
+      for (i = 0; i <= n; i++) {
+        if (i % 2 == 0) {
+          soe = soe + i;
+        } else {
+          sod = sod + i;
+        }
+      }
+      document.write(`Some of EVEN number is :${soe}<br>`);
+      document.write(`Some of ODD number is :${sod}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

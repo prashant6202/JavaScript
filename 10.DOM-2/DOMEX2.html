@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function operate() {
+        //write the code to convert all course to upercase
+        let ul = document.querySelectorAll("li");
+        ul.forEach((element) => {
+          element.innerText = element.innerText.toUpperCase();
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Welcome To SCA</h2>
+    <h3><strong>Our Mission</strong></h3>
+    <p>
+      The mission of the SHARMA COMPUTER ACADEMY is to provide its students with
+      the foundation for lifelong learning
+    </p>
+    <div>
+      <h3>Our Courses</h3>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>Django</li>
+        <li>MERN</li>
+        <li>Java</li>
+        <li>Oracle</li>
+      </ul>
+      <input type="button" value="click me" onclick="operate()" />
+    </div>
+  </body>
+</html>

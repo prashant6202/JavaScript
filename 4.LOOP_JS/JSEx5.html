@@ -1,0 +1,30 @@
+<!--Write a javaScript code to contnously accept nuumbers from the user and as soon as 0
+is entered show the SUM and AVERAGE of all the muner inputeed by the user...-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let sum = 0,
+        count = 0;
+      do {
+        var n = Number(prompt("Enter a number"));
+        if (isNaN(n) == true) {
+          document.write("Plese input NUMBER type only...");
+        } else {
+          sum = sum + n;
+          // if(n==0){
+          //     break;      ------------->if we use it than replace conunt-1  by conunt
+          // }
+          count++;
+        }
+      } while (n != 0);
+      document.write(`SUM is :${sum}<br>`);
+      document.write(`AVERAGE is :${sum / (count - 1)}`);
+    </script>
+  </head>
+  <body></body>
+</html>

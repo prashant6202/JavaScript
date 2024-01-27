@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function alignItem() {
+        let h3 = document.querySelector("h3");
+        h3.setAttribute("style", " text-align: center");
+      }
+    </script>
+  </head>
+  <body>
+    <h3 style="color: blue">OUR MISSION</h3>
+    <input type="button" value="click me" onclick="alignItem()" />
+  </body>
+</html>
+
+<!-- In this code evey thing is work but one problem. after function call item align center 
+but orignal property of h3 overwrite
+so we will not use setAttribute on this place we will use style attribute -->

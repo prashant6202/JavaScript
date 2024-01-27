@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function showDate() {
+        let p = document.querySelector("p");
+
+        let today = new Date();
+        let day = today.getDate();
+        let month = today.getMonth() + 1;
+        let year = today.getFullYear();
+
+        p.innerText = day + "/" + month + "/" + year;
+        p.style.color = "blue";
+        p.style.fontWeight = "bold";
+      }
+    </script>
+  </head>
+  <body>
+    <p>Click the button to display current date</p>
+    <input type="button" value="Show Date" onclick="showDate()" />
+  </body>
+</html>

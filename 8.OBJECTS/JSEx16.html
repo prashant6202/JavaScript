@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using JSON.stringify and it is good practice</title>
+    <script>
+      let person1 = { name: "Prashant", gender: "male" };
+      let person2 = { name: "Prashant", gender: "male" };
+      function compareObj(p1, p2) {
+        return JSON.stringify(p1) === JSON.stringify(p2);
+      }
+      document.write(`${compareObj(person1, person2)}`);
+    </script>
+  </head>
+  <body></body>
+</html>

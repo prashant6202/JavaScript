@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function decorate() {
+        let allElements = document.querySelectorAll(".highlight");
+        allElements.forEach((element) => {
+          element.style.border = "3px solid red";
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <ul id="nav1" class="highlight">
+      <li>Home</li>
+      <li>Products</li>
+      <li>Services</li>
+      <li>Contact</li>
+      <li>About Us</li>
+    </ul>
+
+    <ul id="nav2" class="highlight">
+      <li>Book</li>
+      <li>Mobile</li>
+      <li>Laptops</li>
+    </ul>
+
+    <ul id="nav3" class="highlight">
+      <li>Cloths</li>
+      <li>Pens</li>
+      <li>Diaries</li>
+    </ul>
+    <input type="button" value="Add border" onclick="decorate()" />
+  </body>
+</html>

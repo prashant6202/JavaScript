@@ -1,0 +1,18 @@
+<!--for in loop  dose not visit undefind indexies-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let n = [10, , 30, 40, , 50, ,];
+      alert(`The size of array is ${n.length}`);
+      for (let i in n) {
+        document.write(`index: ${i} : ${n[i]}<br>`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

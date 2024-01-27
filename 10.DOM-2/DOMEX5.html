@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function showContactForm() {
+        let div = document.querySelector("div");
+        div.innerHTML = `<h3>contact form</h3><br>`;
+        div.innerHTML += ` <form action="contact.js">`;
+        div.innerHTML += `<b>Enter your name:</b> <input type="text" size="30" placeholder="Enter your Name"  /> <br>`;
+        div.innerHTML += `<b>Enter your email id:</b> <input type="email" size="30" name="email" placeholder="Enter your email id" /><br>`;
+        div.innerHTML += `<b>Enter your phone no:</b>   <input type="text" size="30" placeholder="Enter your mobile no"/><br>`;
+        div.innerHTML += `<input
+      type="button"
+      name="button"
+      value="Save"
+    />`;
+        div.innerHTML += `</form>`;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Get In Touch</h2>
+    <input
+      type="button"
+      name="button"
+      value="Show contact Form"
+      onclick="showContactForm()"
+    />
+    <div></div>
+  </body>
+</html>

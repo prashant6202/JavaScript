@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script>
+      //  let student = { name: "Sumit", age: 15, phy: 45, chem: 50, meaths: 65 };
+      let student = new Object();
+      student.name = "Sumit";
+      student.age = 15;
+      student.phy = 45;
+      student.chem = 50;
+      student.maths = 65;
+      let sum = 0;
+      for (let key in student) {
+        if (key !== "name" && key !== "age") {
+          sum = sum + student[key];
+        }
+      }
+      document.write(`Total marks is ${sum}`);
+    </script>
+  </head>
+  <body></body>
+</html>

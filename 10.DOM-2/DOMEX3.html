@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interHTML</title>
+    <script>
+      function operate() {
+        let ul = document.querySelector("ul");
+        let listItems = ul.querySelectorAll("li");
+        listItems.forEach((li) => {
+          li.innerHTML = `<strong>${li.innerHTML}</strong>`;
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Welcome To SCA</h2>
+    <h3><strong>Our Mission</strong></h3>
+    <p>
+      The mission of the SHARMA COMPUTER ACADEMY is to provide its students with
+      the foundation for lifelong learning
+    </p>
+    <div>
+      <h3>Our Courses</h3>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>Django</li>
+        <li>MERN</li>
+        <li>Java</li>
+        <li>Oracle</li>
+      </ul>
+      <input type="button" value="click me" onclick="operate()" />
+    </div>
+  </body>
+</html>

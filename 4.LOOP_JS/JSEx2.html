@@ -1,0 +1,22 @@
+<!--Write a program in JavaScript to accept an integer form the user and print the table 
+of the integer up to 10 terms...-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let n = Number(prompt("Enter a number"));
+      let i = 1;
+      document.write(`<h1>Table of ${n}</h1>`);
+      document.write(`<table border='1'>`);
+      while (i <= 10) {
+        document.write(`<tr><td>${n} * ${i} =&nbsp;&nbsp;${n * i}</td></tr>`);
+        i++;
+      }
+      document.write(`</table>`);
+    </script>
+  </head>
+  <body></body>
+</html>

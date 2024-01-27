@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding method in Object</title>
+    <script>
+      let myCar = new Object();
+      myCar.compar = "Maruti";
+      myCar.model = "Baleno";
+      myCar.year = 2020;
+      myCar.start = function () {
+        console.log("Starting the car...");
+      };
+      myCar["stop"] = function () {
+        console.log("Stopping the car...");
+      };
+    </script>
+  </head>
+  <body>
+    <script>
+      myCar.start();
+      myCar.stop();
+    </script>
+  </body>
+</html>

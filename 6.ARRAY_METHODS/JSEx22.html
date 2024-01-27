@@ -1,0 +1,36 @@
+<!--Write a JavaScript code to accept 5 NAMES from the user and store them in an ARRAY.
+Now ask the user to input ANOTHER NAME and PRINT all the occurrences of this name in the
+given ARRAY using the ARRAY METHOD indexOf(). in case the given name is not found at all,
+print message NAME NOT FOUND! -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      let names=[];
+      let index;
+      for(let i=0;i<5;i++){
+       names.push(String(prompt("Enter name"))); 
+      }
+      document.write(`<h2><u>Accepted name from the user:</u></h2>`);
+      for (let x of names) {
+        document.write(`<b>${x}</b><br>`);
+     }
+      let searchName=String(prompt("Enter name for searching"));
+     let result=names.indexOf(searchName);
+     document.write(`<b><u>Accepted name for searching is:</u></b><h3>${searchName}</h3>`);
+      if(result==-1){
+        document.write(`<b>${searchName}</b> is not found !`);
+      }else{
+        document.write(` index of <b>${searchName}</b> is <b> ${result+1}</b> `);
+      }
+     
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

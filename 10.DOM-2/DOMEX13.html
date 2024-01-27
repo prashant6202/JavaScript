@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function decorate() {
+        let para = document.querySelector("p");
+        para.classList.add("error");
+      }
+
+      function unDecorate() {
+        let para = document.querySelector("p");
+        para.classList.remove("error");
+      }
+
+      function toggleCss() {
+        let para = document.querySelector("p");
+        para.classList.toggle("error");
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos error,
+      voluptas tempora dolor enim maxime! Veniam, facere quisquam quaerat
+      possimus neque ipsum, dolor corrupti aperiam asperiores fuga, beatae
+      eligendi perspiciatis.
+    </p>
+    <input type="button" value="Add class" onclick="decorate()" />
+    <input type="button" value="Remove class" onclick="unDecorate()" />
+    <input type="button" value="Toggel class" onclick="toggleCss()" />
+  </body>
+</html>

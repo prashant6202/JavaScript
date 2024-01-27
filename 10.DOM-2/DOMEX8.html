@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Link</title>
+    <script>
+      function generateLink() {
+        let webName = prompt("Enter website name");
+        let div = document.querySelector("div");
+        div.innerHTML = `<h3>Your Link</h3>`;
+        div.innerHTML += `<a href="https://www.${webName}">${webName}</a>`;
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Generate webisde link</h3>
+    <input type="button" value="Generate link" onclick="generateLink()" />
+    <div></div>
+  </body>
+</html>

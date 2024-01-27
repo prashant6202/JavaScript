@@ -1,0 +1,49 @@
+<!--Suppose at a University there are 5 subjects and passing marks for each subject is 60.
+to be promoted to the next class a student must alleat pas 4 subjects. AAlso his average marks
+should not be less than 60. Write an app to promt the user for inputting marks in 5 subjects
+and print his averae marks, mumber of subjects he has passed and finally whether he is
+promoted to the next class......only ternary operator-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      s1 = Number(prompt("Enter marks of 1 subject :"));
+      s2 = Number(prompt("Enter marks of 2 subject :"));
+      s3 = Number(prompt("Enter marks of 3 subject :"));
+      s4 = Number(prompt("Enter marks of 4 subject :"));
+      s5 = Number(prompt("Enter marks of 5 subject :"));
+      document.write(`your Marks<br>`);
+      document.write(`${s1}<br>`);
+      document.write(`${s2}<br>`);
+      document.write(`${s3}<br>`);
+      document.write(`${s4}<br>`);
+      document.write(`${s5}<br>`);
+
+      let avg = (s1 + s2 + s3 + s4 + s5) / 5;
+      let pcount = 0,
+        fcount = 0;
+      s1 >= 60 ? pcount++ : fcount++;
+      s2 >= 60 ? pcount++ : fcount++;
+      s3 >= 60 ? pcount++ : fcount++;
+      s4 >= 60 ? pcount++ : fcount++;
+      s5 >= 60 ? pcount++ : fcount++;
+
+      pcount >= 4
+        ? avg >= 60
+          ? document.write(
+              `avg marks are : ${avg}<br> number of subject passes are : ${pcount}<br> and he is promoted to the next class `
+            )
+          : document.write(
+              `avg marks are : ${avg} <br><br>number of subject passes are : ${pcount} <br>and he is not promoted to the next class `
+            )
+        : document.write(
+            `avg marks are : ${avg}<br> number of subject passes are : ${pcount}<br> and he is not promoted to the next class `
+          );
+    </script>
+  </head>
+  <body></body>
+</html>

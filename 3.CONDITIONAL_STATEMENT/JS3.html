@@ -1,0 +1,21 @@
+<!--Write a JavaScript code t oaccept an integer form type user and print bis ABSOLUTE VALUE.
+Also make sure that if the user inputs a NON-NUMERIC VALUE your code displays the message 
+"You did not input a number" -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let a = prompt("Enter a number");
+      if (isNaN(a) == true) {
+        document.write("You did not input a number");
+      } else {
+        var char = a >= 0 ? a : -a;
+        document.write(`${char}`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

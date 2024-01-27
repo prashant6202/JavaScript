@@ -1,0 +1,32 @@
+<!--Write a JavaScript code to accept an integer from the user and store all the PRIME NUMBER
+ uo to that number in an ARRAY which should be DYNAMMICALLY sized. finally print the elements
+of the ARRAY-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let num = Number(prompt("Enter a number"));
+      if (isNaN(num)) {
+        alert(`you did not enter a number plese enter a number.`);
+      } else {
+        let i, j;
+        document.write(`<h1><u>Prime number form 1 to ${num} are:</u></h1>`);
+        for (i = 2; i <= num; i++) {
+          let n = parseInt((i+1) / 2);
+          for (j = 2; j <= n; j++) {
+            if (i % j == 0) {
+              break;
+            }
+          }
+          if (j == n+1) {
+            document.write(`<h2>${i}</h2>`);
+          }
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

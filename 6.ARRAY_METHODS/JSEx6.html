@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>using splice() methods</title>
+    <script>
+      let fruits = ["Guava", "Apple", "Grapes", "Banana"];
+      document.write(`size is: ${fruits.length}<br>`);
+      document.write(`values: ${fruits}<br>`);
+      let splicdElement = fruits.splice(1, 2); //-->array ke first index pr jao oha se 2 element remove kr do
+      document.write(`<b><u>AFTER PUSHING ELEMENT</u></b><br>`);
+      document.write(`Deleted elements:<b> ${splicdElement}</b><br>`);
+      document.write(`size: ${fruits.length}<br>`);
+      document.write(`values: ${fruits}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

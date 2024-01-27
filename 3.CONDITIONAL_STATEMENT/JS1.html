@@ -1,0 +1,25 @@
+<!--Write a JS code to accept an integer from the user and check whether it is EVEN or ODD 
+also make sure that if the user innputs a NON-NUMERIC value your code dosplays the message
+"You did not input a number"-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let a = prompt("Enter a number ");
+      if (isNaN(a) == true) {
+        document.write("Given input is not a number...");
+      } else {
+        if (a % 2 === 0) {
+          document.write(a + " is EVEN number");
+        } else {
+          document.write(a + " is ODD number");
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
