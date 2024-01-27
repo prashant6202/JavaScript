@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHANGE THE BODY COLOR ON CLICKING RADIO BUTTON</title>
+    <script>
+      function changeBackgroundColor(ref) {
+        var body = document.querySelector("body");
+        if (ref.id === "red") {
+          body.style.background = "red";
+        } else if (ref.id === "green") {
+          body.style.background = "green";
+        } else {
+          body.style.background = "yellow";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h3>Select an option to change page background color</h3>
+      <input
+        type="radio"
+        name="r1"
+        onclick="changeBackgroundColor(this)"
+        id="red"
+      />RED
+      <br />
+      <input
+        type="radio"
+        name="r1"
+        onclick="changeBackgroundColor(this)"
+        id="green"
+      />GREEN <br />
+      <input
+        type="radio"
+        name="r1"
+        onclick="changeBackgroundColor(this)"
+        id="yellow"
+      />YELLOW <br />
+    </div>
+  </body>
+</html>

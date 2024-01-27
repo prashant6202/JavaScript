@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function verify() {
+        return confirm("Are you sure to visit FACEBOOK"); //confirm bhi to true and false return krta hai
+      }
+
+      /* uper ka decleration thoda hard hai isliye ye dekho
+        
+        function verify() {
+        let ans= confirm("Are you sure to visit FACEBOOK");
+        if(ans===true){
+            return true;
+        }else{
+            return false;
+        }
+      }
+        */
+    </script>
+  </head>
+  <body>
+    <a href="http://www.facebook.com" onclick="return(verify())"
+      >click me to visit Facebook</a
+    >
+  </body>
+</html>

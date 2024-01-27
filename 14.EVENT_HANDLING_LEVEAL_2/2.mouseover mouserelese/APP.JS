@@ -1,0 +1,13 @@
+const heading = document.querySelector("h3");
+heading.addEventListener("dblclick", () => {
+  heading.style.fontStyle = "italic";
+});
+const img = document.querySelector("img");
+img.addEventListener("mouseover", () => {
+  img.src = "../../10.DOM-2/mypic.jpg";
+});
+
+const a = document.querySelector("img");
+a.addEventListener("mouseout", () => {
+  img.src = "../../10.DOM-2/about-me.jpg";
+});

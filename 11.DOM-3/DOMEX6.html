@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>using removeChild("jise delete krna hai") method</title>
+    <script>
+      function addPara() {
+        let div = document.querySelector("div");
+        let para = div.firstElementChild;
+        div.removeChild(para);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="d1">
+      <p id="p1">I am para 1</p>
+      <p id="p2">I am para 2</p>
+    </div>
+    <input type="button" value="Remove Para" onclick="addPara()" />
+  </body>
+</html>

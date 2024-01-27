@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function operate() {
+        let div = document.querySelector("div");
+        let allElem = div.childNodes;
+        allElem.forEach((Element) => {
+          if (Element.nodeType == 1) {
+            Element.style.color = "blue";
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Welcome To SCA</h2>
+      <h3>Our Mission</h3>
+      <p>
+        The mission of the SHARMA COMPUTER ACADEMY is to provide its students
+        with the foundation for lifelong learning
+      </p>
+      <h3>Our Courses</h3>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>Django</li>
+        <li>MERN</li>
+        <li>Java</li>
+        <li>Oracle</li>
+      </ul>
+    </div>
+
+    <input type="button" value="change color" onclick="operate()" />
+  </body>
+</html>

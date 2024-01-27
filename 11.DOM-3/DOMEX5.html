@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>using inserBefore() method</title>
+    <script>
+      function addPara() {
+        let div = document.querySelector("div");
+        let para1 = document.querySelector("#p1");
+        let para = document.createElement("p");
+        let text = document.createTextNode("I am para");
+        para.appendChild(text);
+        div.insertBefore(para, para1);
+      }
+    </script>
+  </head>   
+  <body>
+    <div id="d1">
+      <p id="p1">I am para 1</p>
+      <p id="p2">I am para 2</p>
+    </div>
+    <input type="button" value="add new para" onclick="addPara()" />
+  </body>
+</html>

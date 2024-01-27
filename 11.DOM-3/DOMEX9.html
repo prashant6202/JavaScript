@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>appending multiple element using append</title>
+    <script>
+      function addPara() {
+        let div = document.querySelector("div");
+        let newPara1 = document.createElement("p");
+        let NewPara2 = document.createElement("p");
+        newPara1.innerText = "I am Para 3";
+        NewPara2.innerText = "I am para 4";
+        div.append("Welcome", newPara1, "JavaScript Rocks!", NewPara2);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="d1">
+      <p id="p1">I am para 1</p>
+      <p id="p2">I am para 2</p>
+    </div>
+    <input type="button" value="add para" onclick="addPara()" />
+  </body>
+</html>

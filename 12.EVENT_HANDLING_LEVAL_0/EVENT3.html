@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHANGE THE COLOR OF DIV1 and DIV2 USING one FUNCTION</title>
+    <script>
+      function changeColor(ref) {
+        if (ref.id === "div1") {
+          ref.style.background = "red";
+        } else {
+          ref.style.background = "yellow";
+        }
+      }
+    </script>
+    <style>
+      #div1 {
+        width: 300px;
+        height: 200px;
+        border: solid 1px black;
+        cursor: pointer;
+      }
+      #div2 {
+        width: 300px;
+        height: 200px;
+        border: solid 1px black;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1" onclick="changeColor(this)">
+      click to change clolr to RED
+    </div>
+    <div id="div2" onclick="changeColor(this)">
+      click to change clolr to YELLOW
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function addPara() {
+        let div = document.querySelector("div"); 
+        let para = document.createElement("p");
+        let text = document.createTextNode("Iam para 3");
+        para.appendChild(text);
+        div.appendChild(para);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <p>I am para 1</p>
+      <p>I am para 2</p>
+    </div>
+    <input type="button" value="add new para" onclick="addPara()" />
+  </body>
+</html>
